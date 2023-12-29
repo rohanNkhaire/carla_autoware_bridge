@@ -1,0 +1,14 @@
+repositories:
+  # carla-ros-bridge
+  ros-bridge:
+    type: git
+    url: https://github.com/rohanNkhaire/ros-bridge.git
+    version: master
+  msgs/autoware_auto_msgs:
+    type: git
+    url: https://github.com/rohanNkhaire/autoware_auto_msgs.git
+    version: tier4/main
+  msgs/astuff_sensor_msgs:
+    type: git
+    url: https://github.com/rohanNkhaire/astuff_sensor_msgs.git
+    version: master
