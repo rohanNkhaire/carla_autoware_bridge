@@ -15,4 +15,8 @@ repositories:
   carla_autoware:
     type: git
     url: https://github.com/rohanNkhaire/carla_autoware.git
-    version: master  
+    version: master
+  carla_autoware_launch:
+    type: git
+    url: https://github.com/rohanNkhaire/carla_autoware_launch.git
+    version: master    
