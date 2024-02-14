@@ -19,4 +19,8 @@ repositories:
   dbw_ros:
     type: git
     url: https://github.com/rohanNkhaire/dbw_ros.git
-    version: master  
+    version: master
+  carla_autoware_launch:
+    type: git
+    url: https://github.com/rohanNkhaire/carla_autoware_launch.git
+    version: digital_twin     
