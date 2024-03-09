@@ -72,3 +72,6 @@ To use Ackermann control in ros-bridge, install a specific version of *simple-pi
 pip3 install simple-pid==1.0.1
 ```
 
+# Digital Twin and Virtual Reality for Autonomous Vehicles #
+Please checkout my work situated in [this](https://github.com/rohanNkhaire/carla_autoware/tree/digital_twin) repo.
+
