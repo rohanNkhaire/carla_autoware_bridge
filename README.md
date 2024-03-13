@@ -35,12 +35,16 @@ mkdir src
 # We use --recursive tag to clone the carla_msgs submodule
 vcs import src < bridge.repos --recursive
 
-# Build the workspace
 # First, source your ROS Galactic
-source /opt/ros/galactic/setup.bash
+source /opt/ros/humble/setup.bash
+
+# Install dependencies
+rosdep install --from-paths src -y --ignore-src
+
+# Build the workspace
 colcon build
 
-# install dependencies
+# install dependencies for carla's python API
 cd src/ros-bridge
 pip3 install -r requirements.txt
 ```
@@ -59,10 +63,10 @@ ros2 launch autoware_launch autoware.launch.xml
 ```
 
 ## Note ##
-This repo is tested on **ROS Galactic Geochelone**. The python API for Carla is not compatible with the default shipped version of Python on Ubuntu 22.04.
+This repo is tested on **ROS Humble**.
 
 The setup was tested as
-- Carla autoware bridge on Ubuntu 20.04(ROS Galactic)
+- Carla autoware bridge on Ubuntu 22.04(ROS Galactic)
 - Autoware.universe on ubuntu 22.04(ROS Humble)
 
 The main bridging component comes from [ros-bridge](https://github.com/carla-simulator/ros-bridge) repo. Check it out.
