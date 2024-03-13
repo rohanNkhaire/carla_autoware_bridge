@@ -51,7 +51,7 @@ pip3 install -r requirements.txt
 
 ## Run an example ##
 ```bash
-# Host 1 - carla_autoware_bridge (Ubuntu 20.04)
+# Host 1 - carla_autoware_bridge (Ubuntu 22.04)
 source install/setup.bash
 ros2 launch carla_autoware_launch carla_autoware.launch.xml
 ```
